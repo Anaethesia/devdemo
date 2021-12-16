@@ -5,7 +5,8 @@ import (
 	"golang.org/x/sync/errgroup"
 	"time"
 )
-func main() {
+
+func main_errgroup() {
 	ctx, cancel := context.WithCancel(context.Background())
 	group, errCtx := errgroup.WithContext(ctx)
 

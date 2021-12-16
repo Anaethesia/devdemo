@@ -9,7 +9,7 @@ import (
 // uintptr <==> unsafe.Pointer <==> *T
 
 // unsafe pointer 获取结构体成员
-func main() {
+func main_unsafePointer() {
 
 	var x struct {
 		a int
