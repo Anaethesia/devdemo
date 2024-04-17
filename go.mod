@@ -4,6 +4,7 @@ go 1.16
 
 require (
 	github.com/Shopify/sarama v1.32.0
+	github.com/beanstalkd/go-beanstalk v0.2.0
 	github.com/bsm/sarama-cluster v2.1.15+incompatible
 	github.com/dchest/captcha v0.0.0-20200903113550-03f5f0333e1f
 	github.com/gin-gonic/gin v1.7.7

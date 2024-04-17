@@ -1,11 +1,16 @@
 package main
 
 import (
-	"fmt"
+	"devdemo/go_demo"
 )
 
 func main() {
 	// kafka_demo.Kafka_main()
 
-	fmt.Println("gogogo")
+	go_demo.ProduceJob()
+
+
+	go_demo.ConsumeJob()
+
+
 }
