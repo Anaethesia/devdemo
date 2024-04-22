@@ -22,14 +22,14 @@ func ConcurrencyWorkerJob() {
 
 	// 无缓冲队列，预计导入100个job
 	go func(queue chan<- int) {
-		for i := 0; i <= jobCount; i++ {
+		for i := 0; i < jobCount; i++ {
 			queue <- i
 		}
 		close(queue)
 	}(queue)
 
 	// 开10个goroutine，每个go routine都在读queue channel拿值执行逻辑，然后结果塞到found channel中
-	for i := 0; i <= concurrencyProcess; i++ {
+	for i := 0; i < concurrencyProcess; i++ {
 		go func(queue <-chan int) {
 			for val := range queue {
 				defer wg.Done()
