@@ -7,10 +7,8 @@ import (
 func main() {
 	// kafka_demo.Kafka_main()
 
-	go_demo.ProduceJob()
+	// go_demo.ProduceJob()
+	// go_demo.ConsumeJob()
 
-
-	go_demo.ConsumeJob()
-
-
+	go_demo.ConcurrencyWorkerJob()
 }

@@ -13,7 +13,7 @@ import "fmt"
 	the value of val is 3
 	...
 */
-func main() {
+func AddressInSliceMember() {
 	temp := []int{1, 2, 3, 4, 5}
 	for _, val := range temp {
 		fmt.Println("the address of val is ", &val)
